@@ -78,13 +78,13 @@ console.log(sumNums(3, 4, multiply));
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  if (items.includes("item")) {
+  if (items.includes("Pencil")) {
     return cb(true);
   } else {
     return cb(false);
   }
 }
-console.log(contains);
+console.log(items.includes("Pencil"));
 
 /* STRETCH PROBLEM */
 
