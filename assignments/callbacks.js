@@ -52,13 +52,13 @@ function last(arr, cb) {
   // last passes the last item of the array into the callback.
   return cb(arr[3]);
 }
-const lastItem = last(items, item => { `I like to chew ${item}.` });
-console.log(lastItem);
+const lstItem = last(items, item => `I like to chew ${item}.`);
+console.log(lstItem);
 
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
-
+  return cb(x, y);
 }
 const add = function (x, y) {
   return x + y;
@@ -67,10 +67,12 @@ console.log(sumNums(2, 5, add));
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x, y);
 }
 const multiply = function (x, y) {
   return x * y;
 }
+
 console.log(sumNums(3, 4, multiply));
 
 function contains(item, list, cb) {
